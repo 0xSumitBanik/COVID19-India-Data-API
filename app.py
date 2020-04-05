@@ -1,7 +1,8 @@
 from flask import Flask
 from flask.json import jsonify
-from data import covidCountryData
+from data import Country
 
+URL = 'https://www.mygov.in/corona-data/covid19-statewise-status'
 app = Flask(__name__)
 app.config["DEBUG"]=False
 
@@ -24,8 +25,15 @@ def status():
 
 @app.route("/api/v1.0/country_data",methods=['GET','POST'])
 def countryData():
-  country_data_JSON = covidCountryData()
+  data=Country(URL)
+  country_data_JSON = data.covidCountryData()
   return jsonify(country_data_JSON)
+
+@app.route("/api/v1.0/state_data",methods=['GET'])
+def state():
+  data=Country(URL)
+  state_data_JSON = data.state_data()
+  return jsonify(state_data_JSON)
 
 if __name__ == "__main__":
   app.run()
