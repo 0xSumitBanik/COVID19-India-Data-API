@@ -1,6 +1,6 @@
 from bs4 import BeautifulSoup
 import requests as rq
-
+from icmr_labs import labs_list
 
 class Country:
     def __init__(self, URL):
@@ -44,11 +44,20 @@ class Country:
                 confirmed_case = data.split('\xa0')[2].split('Cured')[0]
                 cured = data.split('\xa0')[3].split('Death')[0]
                 death = data.split('\xa0')[4]
-                state_data = {
+                st_data = {
                     'State': state_name,
                     'Confirmed': confirmed_case,
                     'Cured': cured,
                     'Death': death
                 }
-                json_data.append(state_data)
-        return json_data
+                json_data.append(st_data)
+
+        state_data={
+            'source':self.URL,
+            'state_data':json_data
+        }
+        return state_data
+
+
+    def icmrLabDetails(self):
+        return labs_list
