@@ -1,13 +1,10 @@
 from bs4 import BeautifulSoup
 import requests as rq
 from icmr_labs import labs_list
-
+from helpline_numbers import helpline_numbers
 class Country:
-    def __init__(self, URL):
-        self.URL = URL
-
-    def covidCountryData(self):
-        page_content = rq.get(self.URL).content
+    def covidCountryData(self,URL):
+        page_content = rq.get(URL).content
         soup = BeautifulSoup(page_content, 'html.parser')
         last_updated = (soup.find(
             class_='field field-name-field-covid-india-as-on field-type-text field-label-above')).text[19:]
@@ -31,8 +28,8 @@ class Country:
         }
         return country_data
 
-    def state_data(self):
-        page_content = rq.get(self.URL).content
+    def state_data(self,URL):
+        page_content = rq.get(URL).content
         soup = BeautifulSoup(page_content, 'html.parser')
         datas = (soup.find(
             class_='field field-name-field-covid-statewise-data field-type-field-collection field-label-above').text).split('\n\n')
@@ -53,7 +50,7 @@ class Country:
                 json_data.append(st_data)
 
         state_data={
-            'source':self.URL,
+            'source':URL,
             'state_data':json_data
         }
         return state_data
@@ -61,3 +58,6 @@ class Country:
 
     def icmrLabDetails(self):
         return labs_list
+
+    def helplineNumbers(self):
+        return helpline_numbers
