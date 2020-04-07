@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="{{url_for('static',filename='img/icon.png')}}">
+  <link rel="stylesheet" href= "{{ url_for('static',filename='styles/bootstrap.min.css') }}">
+  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
+  <title>COVID19 India API</title>
+</head>
+<body>
+    <nav class="navbar navbar-light bg-light">
+    <span class="navbar-brand mb-0 h1">COVID19 India API</span>
+    </nav>
+
+    <div class="jumbotron">
+      <p class="display-4" style="font-size: 20px;font-weight: 600;">Country Data</p>
+      <p class="lead">
+        In the Country Data API, you'll get the details of passengers screened count, active cases, recovered cases, migrated cases and death cases.
+      </p>
+      <a class="btn btn-primary btn-sm" href="https://covid-19india-api.herokuapp.com/v2.0/country_data" role="button">Try it out.</a>
+      <hr>
+
+      <p class="display-4" style="font-size: 20px;font-weight: 600;">States and UT Data</p>
+      <p class="lead">
+        In the States and UT Data API, you'll get the details of confirmed cases count, cured cases and death cases.
+      </p>
+      <a class="btn btn-primary btn-sm" href="https://covid-19india-api.herokuapp.com/v2.0/state_data" role="button">Try it out.</a>
+      <hr>
+
+      <p class="display-4" style="font-size: 20px;font-weight: 600;">ICMR Lab Details API</p>
+      <p class="lead">
+        In the ICMR Lab Details API, you'll get the name and addresses of all the Government Labs, Private Labs approved by ICMR for testing.
+      </p>
+      <a class="btn btn-primary btn-sm" href="https://covid-19india-api.herokuapp.com/v2.0/icmr_lab_details" role="button">Try it out.</a>
+      <hr>
+
+      <p class="display-4" style="font-size: 20px;font-weight: 600;">India Helpline API</p>
+      <p class="lead">
+        In the India Helpline API, you'll get the list of all the Helpline Numbers of the States and the Union Territories.
+      </p>
+      <a class="btn btn-primary btn-sm" href="https://covid-19india-api.herokuapp.com/v2.0/helpline_numbers" role="button">Try it out.</a>
+    </div>
+
+    <div class="container-fluid mx-auto" style="text-align: center;">
+        <span style="font-size: 18px;">Contribute on <a href="https://github.com/iSumitBanik/COVID19-India-Data-API">Github</a>
+        
+        
+        </span>
+    </div>
+</body>
+</html>
