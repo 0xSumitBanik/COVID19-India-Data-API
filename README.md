@@ -28,10 +28,39 @@ A Flask application which fetches the data from Ministry of Health and Family We
       State: "AndamanNicobar"
       },
 ```
-To be added, soon:
-
-- [ ] List of COVID19 Testing Laboratories
+**ICMR Lab Details**
+```
+      {
+      government_labs: [
+      {
+      address: " ICMR-Regional Medical Research Centre, Post Bag 13, Dollygunj, Port Blair, Andaman and Nicobar Islands 744103",
+      name: " ICMR-Regional Medical Research Centre, Port Blair"
+      }
+      ],
+            state_or_UT: "Andaman & Nicobar Island"
+      },
+      {
+      collection_sites: [
+      {
+      address: "National Highway 52A, Old Assembly Complex, Naharlagun, Arunachal Pradesh 791110",
+      name: "Tomo Riba Institute of Health & Medical Sciences, Naharlagun"
+      }
+      ],
+            state_or_UT: "Arunachal Pradesh"
+      },
+```
+**Helpline Numbers**
+```
+      contact_details: [
+      {
+            helpline_number: "0866-2410978",
+            state_or_UT: "Andhra Pradesh"
+      },
+      {
+            helpline_number: "9436055743",
+            state_or_UT: "Arunachal Pradesh"
+      },
+```
 ___________________________________________________________________________________________________________
 
-Retrieve Country Data: [/api/v1.0/country_data](https://covid-19india-api.herokuapp.com/api/v1.0/country_data) <br>
-Retrieve State Data:   [/api/v1.0/state_data](https://covid-19india-api.herokuapp.com/api/v1.0/state_data)
+Visit the [website](https://covid-19india-api.herokuapp.com/) to know more.
