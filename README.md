@@ -70,6 +70,27 @@ COVID19India API provides you with the details of the Country Cases and the Stat
 ```
 ___________________________________________________________________________________________________________
 
+## Built With
+
+* [Flask](https://g.co/kgs/bDNDHj) - The web framework used
+
+<!-- ## Contributing
+
+Please read for details on our code of conduct, and the process for submitting pull requests to us. -->
+ 
+
+## Authors
+
+* **Sumit Banik** - [Sumit Banik](https://github.com/iSumitBanik)
+* **Gaurav Sahadev** - [Gaurav Sahadev](https://github.com/Gauravsahadev)
+
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/Gauravsahadev/COVID19-India-Data-API/blob/master/LICENSE) file for details
+
+
+
 ### Feel free to contribute
 
 Submit a Pull Request or drop an issue.
