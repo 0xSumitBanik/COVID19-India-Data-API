@@ -1,7 +1,14 @@
 # COVID19-India-Data-API
-A Flask application which fetches the data from Ministry of Health and Family Welfare ( [MoFHW](https://www.mohfw.gov.in/) ) and returns a JSON object.
 
-**Country Data**
+COVID19India API provides you with the details of the Country Cases and the State Cases as per the data updated in the MyGOV website. [Source](https://www.mygov.in/corona-data/covid19-statewise-status) ▶
+
+**API Homepage:** [COVID19 India API](https://lnkd.in/fkUdbur) ⚡ 
+
+[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/iSumitBanik/COVID19-India-Data-API/graphs/commit-activity) [![GitHub stars](https://img.shields.io/github/stars/iSumitBanik/COVID19-India-Data-API.svg?style=flat&label=☆Star&maxAge=2592000)](https://github.com/iSumitBanik/COVID19-India-Data-API/stargazers) [![GitHub forks](https://img.shields.io/github/forks/iSumitBanik/COVID19-India-Data-API.svg?style=flat&label=Fork&maxAge=2592000)](https://github.com/iSumitBanik/COVID19-India-Data-API/network/)
+
+## API Response - JSON 📨 
+
+**Country Data** 👨🏻‍⚕️
 
 ```
       {
@@ -13,7 +20,7 @@ A Flask application which fetches the data from Ministry of Health and Family We
       recovered_cases: 183
       }
 ```
-**State Data**
+**State Data** 😷
 ```
       {
       Confirmed: "161",
@@ -28,7 +35,7 @@ A Flask application which fetches the data from Ministry of Health and Family We
       State: "AndamanNicobar"
       },
 ```
-**ICMR Lab Details**
+**ICMR Lab Details** 🔬
 ```
       {
       government_labs: [
@@ -49,7 +56,7 @@ A Flask application which fetches the data from Ministry of Health and Family We
             state_or_UT: "Arunachal Pradesh"
       },
 ```
-**Helpline Numbers**
+**Helpline Numbers** 📞
 ```
       contact_details: [
       {
@@ -63,4 +70,6 @@ A Flask application which fetches the data from Ministry of Health and Family We
 ```
 ___________________________________________________________________________________________________________
 
-Visit the [website](https://covid-19india-api.herokuapp.com/) to know more.
+### Feel free to contribute
+
+Submit a Pull Request or drop an issue.
