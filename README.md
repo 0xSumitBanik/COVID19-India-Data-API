@@ -87,7 +87,7 @@ Please read for details on our code of conduct, and the process for submitting p
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/Gauravsahadev/COVID19-India-Data-API/blob/master/LICENSE) file for details
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/iSumitBanik/COVID19-India-Data-API/blob/master/LICENSE) file for details
 
 
 
