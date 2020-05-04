@@ -52,12 +52,7 @@ def state():
   data=Country()
   state_data_JSON = data.state_data()
   return jsonify(state_data_JSON)
-
-
-@app.route('/test_count',methods=['GET','POST'])
-def covidTestCount():
-  test_count = Country()
-  return jsonify(test_count.covidTestCount())
+ 
 
 @app.route('/helpline_numbers',methods=['GET','POST'])
 def helpline_numbers():
