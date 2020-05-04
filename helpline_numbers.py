@@ -1,5 +1,10 @@
 helpline_numbers = {
   'source':'https://www.mohfw.gov.in/pdf/coronvavirushelplinenumber.pdf',
+  'helpline_number':'+91-11-23978046',
+  'toll_free':'1075',
+  'helpline_email':'ncov2019@gov.in',
+  
+
   'contact_details':[
   {
     'state_or_UT':'Andhra Pradesh',

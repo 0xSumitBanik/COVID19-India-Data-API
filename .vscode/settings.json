@@ -1,3 +1,4 @@
 {
-  "python.pythonPath": "covid19api\\Scripts\\python.exe"
+  "python.pythonPath": "covid19api\\Scripts\\python.exe",
+  "python.formatting.provider": "yapf"
 }

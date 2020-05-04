@@ -1,63 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" href="{{url_for('static',filename='img/icon.png')}}">
-  <link rel="stylesheet" href= "{{ url_for('static',filename='styles/materialize.min.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static',filename='styles/materialize.min.css') }}">
   <title>COVID19 India API</title>
 </head>
-<body>
-    <nav class="navbar" style="background-color: #EC5050;">
+
+<body style="background-color: #E9E9EC;">
+  <nav class="navbar" style="background-color: #EC5050;">
     <div style="text-align: center;"><strong style="font-size: 22px;">COVID19 India API</strong></div>
-    </nav>
+  </nav>
 
-    <div class="container">
-          <p style="font-size: 20px;font-weight: 650;">Country Data</p>
-          <blockquote>
-          In the response of this API, 
-          you'll get the 
-          details of passengers screened count, active cases, recovered cases, migrated cases and death cases.
-          </blockquote>
-          <a class="waves-effect waves-light btn"
-          href="https://covid-19india-api.herokuapp.com/v2.0/country_data"
-          target="_blank">Try it out</a>
+  <div class="container">
+    <p style="font-size: 20px;font-weight: 650;">Country Data</p>
+    <blockquote>
+      In the response of this API,
+      you'll get the
+      details of passengers screened count, active cases, recovered cases, migrated cases and death cases.
+    </blockquote>
+    <a class="waves-effect waves-light btn" href="/country_data" target="_blank">Try it out</a>
 
-          <p style="font-size: 20px;font-weight: 650;">States & Union Territories Data</p>
-          <blockquote>
-          In the response of this API,
-          you'll get the details of confirmed cases count, cured cases and death cases.
-          </blockquote>
-          <a class="waves-effect waves-light btn"
-          href="https://covid-19india-api.herokuapp.com/v2.0/state_data"
-          target="_blank">Try it out</a>
+    <p style="font-size: 20px;font-weight: 650;">States & Union Territories Data</p>
+    <blockquote>
+      In the response of this API,
+      you'll get the details of confirmed cases count, cured cases and death cases.
+    </blockquote>
+    <a class="waves-effect waves-light btn" href="/state_data" target="_blank">Try it out</a>
 
-          <p style="font-size: 20px;font-weight: 650;">ICMR Lab Details</p>
-          <blockquote>
-          In the response of this API,
-          you'll get the name and addresses of all the Government Labs, Private Labs approved by ICMR for testing.
-          </blockquote>
-          <a class="waves-effect waves-light btn"
-          href="https://covid-19india-api.herokuapp.com/v2.0/icmr_lab_details"
-          target="_blank">Try it out</a>
+    <p style="font-size: 20px;font-weight: 650;">Coronavirus Headlines</p>
+    <blockquote>
+      In the response of this API,
+      you'll get the headlines,thumbnails and the corresponding news summary.
+    </blockquote>
+    <a class="waves-effect waves-light btn" href="/headlines" target="_blank">Try it out</a>
 
-          <p style="font-size: 20px;font-weight: 650;">Helpline Numbers</p>
-          <blockquote>
-          In the response of this API,
-          you'll get the list of all the Helpline Numbers of the States and the Union Territories.
-          </blockquote>
-          <a class="waves-effect waves-light btn"
-          href="https://covid-19india-api.herokuapp.com/v2.0/helpline_numbers"
-          target="_blank">Try it out</a>
-          </div>
-          
-          <div style="padding: 70px 20px 0px 10px;">
-            <strong style="float: left;">
-              Source: <a href="https://www.mygov.in/corona-data/covid19-statewise-status" target="_blank">MyGov India</a>
-            </strong>
-            <strong style="float: right;">
-              <a href="https://github.com/iSumitBanik/COVID19-India-Data-API/" target="_blank">Github</a>
-            </strong>
-          </div>
-  </body>
+    <p style="font-size: 20px;font-weight: 650;">Helpline Numbers</p>
+    <blockquote>
+      In the response of this API,
+      you'll get the list of all the Helpline Numbers of the States and the Union Territories.
+    </blockquote>
+    <a class="waves-effect waves-light btn" href="/helpline_numbers" target="_blank">Try it out</a>
+  </div>
+
+  <div style="padding: 70px 20px 0px 10px;">
+    <strong style="float: left;">
+      Source: <a href="https://www.mygov.in/corona-data/covid19-statewise-status" target="_blank">MyGov India</a>
+    </strong>
+    <strong style="float: right;">
+      <a href="https://github.com/iSumitBanik/COVID19-India-Data-API/" target="_blank">Github</a>
+    </strong>
+  </div>
+</body>
+
 </html>
