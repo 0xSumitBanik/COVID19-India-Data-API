@@ -32,7 +32,7 @@ def icmr_lab_details2():
     'message':'Please visit Homepage for more API endpoints'
   })
 
-@app.route('/v2.0/helpline_numbers',methods=['GET','POST'])
+@app.route("/v2.0/helpline_numbers",methods=['GET','POST'])
 def helpline_numbers2():
   numbers = Country()
   helpline_numbers_JSON = numbers.helplineNumbers()
