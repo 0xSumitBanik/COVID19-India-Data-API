@@ -11,8 +11,28 @@
 
   <title>COVID19 India API</title>
   <style>
-    .btn{
+    .btn {
       background-color: #E9A134;
+    }
+
+    .btn:hover,
+    .btn:active,
+    .btn:visited {
+      background-color: #E9A134;
+    }
+
+    blockquote {
+      margin: 20px 0;
+      padding-left: 1.5rem;
+      border-left: 3px solid #b7b1b1;
+    }
+
+    .row .col.s12 {
+      width: 100%;
+      margin-left: auto;
+      left: auto;
+      right: auto;
+      text-align: center;
     }
   </style>
 </head>
@@ -29,20 +49,23 @@
   </nav>
 
   <div class="container">
-    <p style="font-size: 20px;font-weight: 650;">Country Data</p>
+
+    <p style="font-size: 20px;font-weight: 650;">Country and State Wise Data</p>
     <blockquote>
       In the response of this API,
       you'll get the
-      details of passengers screened count, active cases, recovered cases, migrated cases, death cases, samples tested, delta changes with different cases growth rates.
+      details of passengers screened count, active cases, recovered cases, migrated cases, death cases, samples tested,
+      delta changes with different cases growth rates along with the state details.
     </blockquote>
-    <a class="waves-effect waves-light btn" href="/country_data" target="_blank">View Response</a>
+    <a class="waves-effect waves-light btn" href="/all" target="_blank">View Response</a>
 
-    <p style="font-size: 20px;font-weight: 650;">States & Union Territories Data</p>
+    <p style="font-size: 20px;font-weight: 650;">Worldwide Data</p>
     <blockquote>
       In the response of this API,
-      you'll get the details of confirmed cases count, cured cases and death cases with different cases growth rates.
+      you'll get the details about confirmed cases,active cases,recovered cases,death cases,new cases along with real
+      time updates around the world.
     </blockquote>
-    <a class="waves-effect waves-light btn" href="/state_data" target="_blank">View Response</a>
+    <a class="waves-effect waves-light btn" href="/global" target="_blank">View Response</a>
 
     <p style="font-size: 20px;font-weight: 650;">Coronavirus Headlines</p>
     <blockquote>
@@ -59,11 +82,19 @@
     <a class="waves-effect waves-light btn" href="/helpline_numbers" target="_blank">View Response</a>
   </div>
 
-  <div style="padding: 70px 20px 0px 10px;">
-    <strong class="center-align" style="font-weight: 700;">
-      <img src="/static/img/github.png" width="12px" height="12px">&nbsp;<a href="https://github.com/iSumitBanik/COVID19-India-Data-API/" target="_blank">Contribute on Github</a>
-      
-    </strong>
+  <div class="row" style="padding: 64px 20px 0px 10px;">
+    <div class="col s12 m10 l10 xl10 offset-m4">
+      <a href="https://github.com/iSumitBanik/COVID19-India-Data-API" target="_blank">
+        <img src="/static/img/github-logo-new.png" width="100px">
+      </a>
+
+    </div>
+
+    <div class="col s12 m2 l2 xl2">
+      <a href="https://covid-19-apis.postman.com/" target="_blank">
+        <img src="/static/img/postman.png" width="120px">
+      </a>
+    </div>
   </div>
 </body>
 

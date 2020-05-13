@@ -1,6 +1,6 @@
 from flask import Flask,render_template
 from flask.json import jsonify
-from data import Country
+from data import COVID_stats
 import json
 
 app = Flask(__name__)
@@ -20,17 +20,28 @@ def page_not_found(e):
 def index():
   return render_template('index.html')
 
+@app.route("/all",methods=['GET','POST'])
+def allData():
+  data=COVID_stats()
+  return jsonify([data.covidCountryData(),data.state_data()])
+
+@app.route("/global",methods=['GET','POST'])
+def globalData():
+  data=COVID_stats()
+  return json.dumps(data.globalData(),sort_keys=False)
 # Older Support
 
 @app.route("/v2.0/country_data",methods=['GET','POST'])
 def countryData2():
-  data=Country()
+  data=COVID_stats()
+
   country_data_JSON = data.covidCountryData()
   return jsonify(["Now, you don't have to mention version number. Visit Homepage for more API endpoints",country_data_JSON])
 
 @app.route("/v2.0/state_data",methods=['GET'])
 def state2():
-  data=Country()
+  data=COVID_stats()
+
   state_data_JSON = data.state_data()
   return jsonify(["Now, you don't have to mention version number. Visit Homepage for more API endpoints",state_data_JSON])
 
@@ -43,14 +54,15 @@ def icmr_lab_details2():
 
 @app.route("/v2.0/helpline_numbers",methods=['GET','POST'])
 def helpline_numbers2():
-  numbers = Country()
+  numbers = COVID_stats()
   helpline_numbers_JSON = numbers.helplineNumbers()
   return jsonify(["Now, you don't have to mention version number. Visit Homepage for more API endpoints",helpline_numbers_JSON])
 
 
 @app.route("/country_data",methods=['GET','POST'])
 def countryData():
-  data=Country()
+  data=COVID_stats()
+
   country_data_JSON = data.covidCountryData()
   return jsonify(country_data_JSON,data.covidTestCount())
 
@@ -58,20 +70,21 @@ def countryData():
 
 @app.route("/state_data",methods=['GET','POST'])
 def state():
-  data=Country()
+  data=COVID_stats()
+
   state_data_JSON = data.state_data()
   return jsonify(state_data_JSON)
  
 
 @app.route("/helpline_numbers",methods=['GET','POST'])
 def helpline_numbers():
-  numbers = Country()
+  numbers = COVID_stats()
   helpline_numbers_JSON = numbers.helplineNumbers()
   return jsonify(helpline_numbers_JSON)
 
 @app.route("/headlines",methods=['GET','POST'])
 def headlines():
-  headlines = Country()
+  headlines = COVID_stats()
   headlines_JSON = headlines.headlines()
   return json.dumps(headlines_JSON,sort_keys=False)
 
