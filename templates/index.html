@@ -3,17 +3,21 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="view Responseport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" href="{{url_for('static',filename='img/icon.png')}}">
-  <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="{{ url_for('static',filename='styles/materialize.min.css') }}">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="{{ url_for('static',filename='styles/custom.css') }}">
 
   <title>COVID19 India API</title>
-
+  <style>
+    .btn{
+      background-color: #E9A134;
+    }
+  </style>
 </head>
 
-<body>
+<body style="text-align: left;">
   <nav class="navbar">
     <div style="float: left;">
       <a href="/">
@@ -29,35 +33,36 @@
     <blockquote>
       In the response of this API,
       you'll get the
-      details of passengers screened count, active cases, recovered cases, migrated cases and death cases.
+      details of passengers screened count, active cases, recovered cases, migrated cases, death cases, samples tested, delta changes with different cases growth rates.
     </blockquote>
-    <a class="waves-effect waves-light btn" href="/country_data" target="_blank">Try it out</a>
+    <a class="waves-effect waves-light btn" href="/country_data" target="_blank">View Response</a>
 
     <p style="font-size: 20px;font-weight: 650;">States & Union Territories Data</p>
     <blockquote>
       In the response of this API,
-      you'll get the details of confirmed cases count, cured cases and death cases.
+      you'll get the details of confirmed cases count, cured cases and death cases with different cases growth rates.
     </blockquote>
-    <a class="waves-effect waves-light btn" href="/state_data" target="_blank">Try it out</a>
+    <a class="waves-effect waves-light btn" href="/state_data" target="_blank">View Response</a>
 
     <p style="font-size: 20px;font-weight: 650;">Coronavirus Headlines</p>
     <blockquote>
       In the response of this API,
       you'll get the headlines,thumbnails and the corresponding news summary.
     </blockquote>
-    <a class="waves-effect waves-light btn" href="/headlines" target="_blank">Try it out</a>
+    <a class="waves-effect waves-light btn" href="/headlines" target="_blank">View Response</a>
 
     <p style="font-size: 20px;font-weight: 650;">Helpline Numbers</p>
     <blockquote>
       In the response of this API,
       you'll get the list of all the Helpline Numbers of the States and the Union Territories.
     </blockquote>
-    <a class="waves-effect waves-light btn" href="/helpline_numbers" target="_blank">Try it out</a>
+    <a class="waves-effect waves-light btn" href="/helpline_numbers" target="_blank">View Response</a>
   </div>
 
   <div style="padding: 70px 20px 0px 10px;">
-    <strong style="float: right;">
-      <a href="https://github.com/iSumitBanik/COVID19-India-Data-API/" target="_blank">Github</a>
+    <strong class="center-align" style="font-weight: 700;">
+      <img src="/static/img/github.png" width="12px" height="12px">&nbsp;<a href="https://github.com/iSumitBanik/COVID19-India-Data-API/" target="_blank">Contribute on Github</a>
+      
     </strong>
   </div>
 </body>
