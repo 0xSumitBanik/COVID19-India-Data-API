@@ -55,7 +55,7 @@ class Country:
                     'state': state_name,
                     'confirmed_cases': int(confirmed_case),
                     'cured_cases': int(cured),
-                    'death_cases': int(death),
+                    'death_cases': death,
                     'active_cases':int(confirmed_case)-int(death)-int(cured),
                     'active_rate':round(((int(confirmed_case)-int(death)-int(cured))/int(confirmed_case)*100),2),
                     'death_rate':round((int(death)/int(confirmed_case)*100),2),
@@ -67,6 +67,7 @@ class Country:
             'source':'myGov',
             'state_data':json_data
         }
+        print(state_data)
         return state_data
 
 

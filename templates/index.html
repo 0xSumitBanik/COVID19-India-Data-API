@@ -5,13 +5,23 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" href="{{url_for('static',filename='img/icon.png')}}">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="{{ url_for('static',filename='styles/materialize.min.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static',filename='styles/custom.css') }}">
+
   <title>COVID19 India API</title>
+
 </head>
 
-<body style="background-color: #f2f2f2;">
-  <nav class="navbar" style="background-color: #EC5050;">
-    <div style="text-align: center;"><strong style="font-size: 22px;">COVID19 India API</strong></div>
+<body>
+  <nav class="navbar">
+    <div style="float: left;">
+      <a href="/">
+        <strong style="font-size: 22px;font-weight: 700;margin-left:10px;color:black">COVID19 India
+          API
+        </strong>
+      </a>
+    </div>
   </nav>
 
   <div class="container">
@@ -46,9 +56,6 @@
   </div>
 
   <div style="padding: 70px 20px 0px 10px;">
-    <strong style="float: left;">
-      Source: <a href="https://www.mygov.in/" target="_blank">MyGov India</a>
-    </strong>
     <strong style="float: right;">
       <a href="https://github.com/iSumitBanik/COVID19-India-Data-API/" target="_blank">Github</a>
     </strong>
