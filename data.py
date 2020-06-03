@@ -170,6 +170,14 @@ class COVID_stats:
 
         for i in image_link:
             image_link_list.append(i.get('style')[23:-3])
+            
+        news_source = soup_news(class_='source')
+        news_source_list = []
+        news_source_link_list = []
+
+        for i in news_source:
+            news_source_list.append(it.text.strip())
+            news_source_link_list.append(i.get('href'))
 
         headlines_summary = soup_news('div', itemprop='articleBody')
         headlines_summary_list = []
@@ -181,7 +189,9 @@ class COVID_stats:
             'source': 'inshorts',
             'headlines': headlines_list,
             'headlines_summary': headlines_summary_list,
-            'image_link': image_link_list
+            'image_link': image_link_list,
+            'news_source': news_source_list,
+            'news_source_link': news_source_link_list
         }
 
         return headlines_dict
