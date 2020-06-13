@@ -169,7 +169,8 @@ class COVID_stats:
         image_link_list = []
 
         for i in image_link:
-            image_link_list.append(i.get('style')[23:-3])
+            s = i.get('style')
+            image_link_list.append(s[s.find("(")+2:s.find("')")])
 
         headlines_summary = soup_news('div', itemprop='articleBody')
         headlines_summary_list = []
