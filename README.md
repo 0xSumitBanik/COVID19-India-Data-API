@@ -1,4 +1,4 @@
-# <p align="center">COVID19-India API<p>
+# COVID19-India API
 This API contains the details of Country and State Cases, Worldwide Cases and COVID related updates. ⚡
 
 
@@ -9,7 +9,7 @@ This API contains the details of Country and State Cases, Worldwide Cases and CO
 <br>
 </p>
 
-[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/iSumitBanik/COVID19-India-Data-API/graphs/commit-activity) ![GitHub language count](https://img.shields.io/github/languages/count/iSumitBanik/COVID19-India-Data-API) ![GitHub repo size](https://img.shields.io/github/repo-size/iSumitBanik/COVID19-India-Data-API)
+[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/iSumitBanik/COVID19-India-Data-API/graphs/commit-activity) ![GitHub language count](https://img.shields.io/github/languages/count/iSumitBanik/COVID19-India-Data-API) ![GitHub repo size](https://img.shields.io/github/repo-size/iSumitBanik/COVID19-India-Data-API) ![Last Commit](https://img.shields.io/github/last-commit/iSumitBanik/COVID19-India-Data-API)
 
 ### Response Demo
 #### Country And States Data 
