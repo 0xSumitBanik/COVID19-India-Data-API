@@ -47,48 +47,48 @@ class COVID_stats:
             class_=
             "field field-name-field-last-total-death field-type-number-integer field-label-above"
         ).text.split('\xa0')[1]
-
+        
         country_data = {
             'last_updated':
             last_updated,
             'passengers_screened':
             int(passengers_screened.replace(",", "")),
             'active_cases':
-            int(active_cases),
+            int(active_cases.replace(",", "")),
             'recovered_cases':
-            int(recovered_cases),
+            int(recovered_cases.replace(",", "")),
             'migrated_cases':
-            int(migrated_cases),
+            int(migrated_cases.replace(",", "")),
             'death_cases':
-            int(death_cases),
+            int(death_cases.replace(",", "")),
             'confirmed_cases':
-            int(active_cases) + int(recovered_cases) + int(death_cases),
+            int(active_cases.replace(",", "")) + int(recovered_cases.replace(",", "")) + int(death_cases.replace(",", "")),
             'death_rate':
             round(
-                (int(death_cases) / (int(active_cases) + int(recovered_cases) +
-                                     int(death_cases)) * 100), 2),
+                (int(death_cases.replace(",", "")) / (int(active_cases.replace(",", "")) + int(recovered_cases.replace(",", "")) +
+                                     int(death_cases.replace(",", ""))) * 100), 2),
             'active_rate':
             round(
-                (int(active_cases) /
-                 (int(active_cases) + int(recovered_cases) + int(death_cases))
+                (int(active_cases.replace(",", "")) /
+                 (int(active_cases.replace(",", "")) + int(recovered_cases.replace(",", "")) + int(death_cases.replace(",", "")))
                  * 100), 2),
             'recovered_rate':
             round(
-                (int(recovered_cases) /
-                 (int(active_cases) + int(recovered_cases) + int(death_cases))
+                (int(recovered_cases.replace(",", "")) /
+                 (int(active_cases.replace(",", "")) + int(recovered_cases.replace(",", "")) + int(death_cases.replace(",", "")))
                  * 100), 2),
             'last_total_active_cases':
-            int(last_total_active_cases),
+            int(last_total_active_cases.replace(",", "")),
             'last_total_recovered_cases':
-            int(last_total_recovered_cases),
+            int(last_total_recovered_cases.replace(",", "")),
             'last_total_death_cases':
-            int(last_total_death_cases),
+            int(last_total_death_cases.replace(",", "")),
             'delta_change_active_cases':
-            int(active_cases) - int(last_total_active_cases),
+            int(active_cases.replace(",", "")) - int(last_total_active_cases.replace(",", "")),
             'delta_change_recovered_cases':
-            int(recovered_cases) - int(last_total_recovered_cases),
+            int(recovered_cases.replace(",", "")) - int(last_total_recovered_cases.replace(",", "")),
             'delta_change_death_cases':
-            int(death_cases) - int(last_total_death_cases)
+            int(death_cases.replace(",", "")) - int(last_total_death_cases.replace(",", ""))
         }
         return country_data
 
