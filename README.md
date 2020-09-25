@@ -1,5 +1,5 @@
 # COVID19-India API
-This API contains the details of Country and State Cases, Worldwide Cases and COVID related updates. ⚡
+This API contains the details of Country and State Cases, Worldwide Cases and COVID related updates along with the Helpline numbers. ⚡
 
 
 
